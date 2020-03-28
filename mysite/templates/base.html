@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOZI Membership Database</title>
+    {% include "material/includes/material_css.html" %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>{% block main %}{% endblock %}</body>
+
+<script src="{% static 'js/jquery/jquery.js' %}"></script>
+{% include "material/includes/material_js.html" %}
+<script>
+    $(document).ready(function(){
+        $('.dropdown-trigger').dropdown();
+    })
+</script>
+</html>
